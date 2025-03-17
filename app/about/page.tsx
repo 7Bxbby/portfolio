@@ -1,6 +1,5 @@
 "use client"
 import Typewriter from 'typewriter-effect';
-import Navigation from "../../components/navigation";
 import React from "react";
 import {LampContainer} from "@/components/ui/lamp";
 export default function Home() {
