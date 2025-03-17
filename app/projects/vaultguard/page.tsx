@@ -3,7 +3,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import createGlobe from "cobe";
-import instagram_logo from "./instagram_logo.png"
+import instagram_logo from "../../../public/instagram_logo.png"
 import vaultguard_logo from "@/public/vaultguard_logo.png"
 import facebook_logo from "./facebook_logo.png"
 import whatsapp_logo from "./whatsapp_logo.png"
