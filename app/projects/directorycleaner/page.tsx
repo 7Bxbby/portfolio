@@ -2,17 +2,8 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-<<<<<<< HEAD
-=======
-import mp4_logo from "../../../public/mp4_logo.png"
-import directorycleaner_logo from "../../../public/directorycleaner_logo.png"
-import wav_logo from "../../../public/wav_logo.png"
-import music_folder_icon from "../../../public/music_folder_icon.png"
-import documents_folder_icon from "../../../public/document_folder_icon.png"
-import video_folder_icon from "../../../public/video_folder_icon.png"
-import pdf_logo from "../../../public/pdf_logo.png"
-import directory_cleaner_showcase from "../../../public/directory_cleaner_showcase.png"
->>>>>>> ae05a92f3154f8493559d50b4acd3aff118f40ac
+
+
 import { motion } from "framer-motion";
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
 
