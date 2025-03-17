@@ -2,12 +2,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import studystreak_logo from "../../../public/studystreak_logo.png"
-import studystreak_dailyprogress from "../../../public/studystreak_todayprogress.png"
-import studystreak_plant from "../../../public/studystreak_plant.png"
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
-import studystreak_session from "../../../public/studystreak_session.png"
-import studystreak_subjects from "../../../public/studystreak_subjects.png"
 
 export default function Home() {
     const features = [
@@ -46,7 +41,7 @@ export default function Home() {
         <div className="relative z-20 lg:max-w-7xl max-w-full lg:mx-auto h-screen px-5 xl:px-40 2xl:px-5 p-0 lg:px-5">
             <div className="px-8">
 
-                <ExpandableDesc title={"StudyStreak"} image={studystreak_logo}>
+                <ExpandableDesc title={"StudyStreak"} image={"/studystreak_logo.png"}>
                     <div className="space-y-4">
                         <div className="mt-4">
                             <h4 className="text-lg font-semibold text-neutral-200">🔎 Tech Stack</h4>
@@ -168,7 +163,7 @@ export const SkeletonOne = () => {
                 <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
                     {/* TODO */}
                     <Image
-                        src={studystreak_session}
+                        src={"/studystreak_session"}
                         alt="header"
                         width={800}
                         height={1000}
@@ -191,7 +186,7 @@ export const SkeletonThree = () => {
             <div className="flex items-center justify-center relative">
                 {/* TODO */}
                 <Image
-                    src={studystreak_dailyprogress}
+                    src={"/studystreak_dailyprogress"}
                     alt="header"
                     width={800}
                     height={800}
@@ -212,7 +207,7 @@ export const SkeletonTwo = () => {
             {/* TODO */}
             <div className="flex items-center justify-center relative">
                 <Image
-                    src={studystreak_subjects}
+                    src={"/studystreak_subjects"}
                     alt="header"
                     className="object-contain object-center"
                 />
@@ -230,7 +225,7 @@ export const SkeletonFour = () => {
     return (
         <div className="flex flex-col items-center pt-16 relative bg-transparent">
             <Image
-                src={studystreak_plant}
+                src={"/studystreak_plant"}
                 alt="header"
                 width={800}
                 height={800}

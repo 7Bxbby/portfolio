@@ -3,26 +3,6 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import createGlobe from "cobe";
-import instagram_logo from "../../../public/instagram_logo.png"
-<<<<<<< HEAD
-import vaultguard_logo from "@/public/vaultguard_logo.png"
-import facebook_logo from "./facebook_logo.png"
-import whatsapp_logo from "./whatsapp_logo.png"
-import snapchat_logo from "./snapchat_logo.png"
-import youtube_logo from "./youtube_logo.png"
-import vaultguard_generate_password_showcase from "./vaultguard_generate_password_showcase.png"
-import saved_passwords_showcase from "./saved_passwords_showcase.png"
-import x_logo from "./x_logo.png"
-=======
-import vaultguard_logo from "../../../public/vaultguard_logo.png"
-import facebook_logo from "../../../public/facebook_logo.png"
-import whatsapp_logo from "../../../public/whatsapp_logo.png"
-import snapchat_logo from "../../../public/snapchat_logo.png"
-import youtube_logo from "../../../public/youtube_logo.png"
-import vaultguard_generate_password_showcase from "../../../public/vaultguard_generate_password_showcase.png"
-import saved_passwords_showcase from "../../../public/saved_passwords_showcase.png"
-import x_logo from "../../../public/x_logo.png"
->>>>>>> ae05a92f3154f8493559d50b4acd3aff118f40ac
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
@@ -64,7 +44,7 @@ export default function Home() {
         <div className="relative z-20 lg:max-w-7xl max-w-full lg:mx-auto h-screen px-5 xl:px-40 2xl:px-5 p-0 lg:px-5">
             <div className="px-8">
 
-                <ExpandableDesc title={"VaultGuard"} image={vaultguard_logo}>
+                <ExpandableDesc title={"VaultGuard"} image={"/vaultguard_logo"}>
                     <div className="space-y-4">
                         {/* Tech Stack */}
                         <div className="mt-4">
@@ -181,7 +161,7 @@ export const SkeletonOne = () => {
                 <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
                     {/* TODO */}
                     <Image
-                        src={vaultguard_generate_password_showcase}
+                        src={"/vaultguard_generate_password_showcase"}
                         alt="header"
                         width={800}
                         height={1000}
@@ -204,7 +184,7 @@ export const SkeletonThree = () => {
             <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
             {/* TODO */}
                 <Image
-                    src={saved_passwords_showcase}
+                    src={"/saved_passwords_showcase"}
                     alt="header"
                     width={800}
                     height={800}
@@ -217,7 +197,7 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
     const images = [
-        instagram_logo,facebook_logo,whatsapp_logo,x_logo,snapchat_logo,youtube_logo,whatsapp_logo
+        "/instagram_logo","/facebook_logo","/whatsapp_logo","/x_logo","/snapchat_logo","/youtube_logo","/whatsapp_logo"
     ];
 
     const imageVariants = {
