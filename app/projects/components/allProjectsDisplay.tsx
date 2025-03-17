@@ -1,6 +1,6 @@
-import project2Image from "./vaultguard_logo.png";
-import project1Image from "./studystreak_logo.png";
-import project3Image from "./directorycleaner_logo.png";
+import project2Image from "../../../public/vaultguard_logo.png";
+import project1Image from "../../../public/studystreak_logo.png";
+import project3Image from "../../../public/directorycleaner_logo.png";
 import Image from "next/image";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
 import Link from "next/link";
