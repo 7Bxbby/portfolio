@@ -2,14 +2,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import mp4_logo from "../../../public/mp4_logo.png"
-import directorycleaner_logo from "../../../public/directorycleaner_logo.png"
-import wav_logo from "../../../public/wav_logo.png"
-import music_folder_icon from "../../../public/music_folder_icon.png"
-import documents_folder_icon from "../../../public/document_folder_icon.png"
-import video_folder_icon from "../../../public/video_folder_icon.png"
-import pdf_logo from "../../../public/pdf_logo.png"
-import directory_cleaner_showcase from "../../../public/directory_cleaner_showcase.png"
 import { motion } from "framer-motion";
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
 
@@ -43,7 +35,7 @@ export default function Home() {
         <div className="relative z-20 lg:max-w-7xl max-w-full lg:mx-auto h-screen px-5 xl:px-40 2xl:px-5 p-0 lg:px-5">
             <div className="px-8">
 
-                <ExpandableDesc title={"DirectoryCleaner"} image={directorycleaner_logo}>
+                <ExpandableDesc title={"DirectoryCleaner"} image={"/directorycleaner_logo.png"}>
                     <div className="space-y-4">
                         {/* Tech Stack */}
                         <div className="mt-4">
@@ -177,7 +169,7 @@ export const SkeletonOne = () => {
                 <div className="flex flex-1 w-full h-full flex-col space-y-2 justify-items-end text-end">
                     {/* TODO */}
                     <Image
-                        src={directory_cleaner_showcase}
+                        src={"/directory_cleaner_showcase.png"}
                         alt="header"
                         width={800}
                         height={1000}
@@ -195,7 +187,7 @@ export const SkeletonOne = () => {
 };
 
 export const SkeletonThree = () => {
-    const folders = Array(5).fill(documents_folder_icon); // Mniejsza liczba, ale powielona
+    const folders = Array(5).fill("/document_folder_icon.png"); // Mniejsza liczba, ale powielona
 
     return (
         <div className="w-full relative overflow-hidden">
@@ -220,8 +212,8 @@ export const SkeletonThree = () => {
 };
 
 export const SkeletonTwo = () => {
-    const images = [pdf_logo, mp4_logo, wav_logo];
-    const folder_images = [documents_folder_icon, video_folder_icon, music_folder_icon];
+    const images = ["/pdf_logo.png", "/mp4_logo.png", "/wav_logo.png"];
+    const folder_images = ["/document_folder_icon.png", "/video_folder_icon.png", "/music_folder_icon.png"];
     const folder_names = ["Docs", "Videos", "Music"];
     const text = [".PDF", ".MP4", ".WAV"];
 

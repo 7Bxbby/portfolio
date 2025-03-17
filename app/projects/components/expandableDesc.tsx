@@ -1,5 +1,5 @@
 "use client";
-import Image, {StaticImageData} from "next/image";
+import Image from "next/image";
 import React, {JSX, useEffect, useRef, useState} from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/use-outside-click";
@@ -7,7 +7,7 @@ import { useOutsideClick } from "../../hooks/use-outside-click";
 interface Props {
     children: React.ReactNode;
     title: string;
-    image: StaticImageData;
+    image: string;
 }
 
 export function ExpandableDesc({title, children, image}:Props): JSX.Element {
