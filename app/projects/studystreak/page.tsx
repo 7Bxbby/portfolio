@@ -2,12 +2,12 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import studystreak_logo from "./studystreak_logo.png"
-import studystreak_dailyprogress from "./studystreak_todayprogress.png"
-import studystreak_plant from "./studystreak_plant.png"
+import studystreak_logo from "../../../public/studystreak_logo.png"
+import studystreak_dailyprogress from "../../../public/studystreak_todayprogress.png"
+import studystreak_plant from "../../../public/studystreak_plant.png"
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
-import studystreak_session from "./studystreak_session.png"
-import studystreak_subjects from "./studystreak_subjects.png"
+import studystreak_session from "../../../public/studystreak_session.png"
+import studystreak_subjects from "../../../public/studystreak_subjects.png"
 
 export default function Home() {
     const features = [

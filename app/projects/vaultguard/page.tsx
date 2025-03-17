@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import createGlobe from "cobe";
 import instagram_logo from "../../../public/instagram_logo.png"
+<<<<<<< HEAD
 import vaultguard_logo from "@/public/vaultguard_logo.png"
 import facebook_logo from "./facebook_logo.png"
 import whatsapp_logo from "./whatsapp_logo.png"
@@ -12,6 +13,16 @@ import youtube_logo from "./youtube_logo.png"
 import vaultguard_generate_password_showcase from "./vaultguard_generate_password_showcase.png"
 import saved_passwords_showcase from "./saved_passwords_showcase.png"
 import x_logo from "./x_logo.png"
+=======
+import vaultguard_logo from "../../../public/vaultguard_logo.png"
+import facebook_logo from "../../../public/facebook_logo.png"
+import whatsapp_logo from "../../../public/whatsapp_logo.png"
+import snapchat_logo from "../../../public/snapchat_logo.png"
+import youtube_logo from "../../../public/youtube_logo.png"
+import vaultguard_generate_password_showcase from "../../../public/vaultguard_generate_password_showcase.png"
+import saved_passwords_showcase from "../../../public/saved_passwords_showcase.png"
+import x_logo from "../../../public/x_logo.png"
+>>>>>>> ae05a92f3154f8493559d50b4acd3aff118f40ac
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import {ExpandableDesc} from "@/app/projects/components/expandableDesc";
