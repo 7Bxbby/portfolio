@@ -10,7 +10,7 @@ export default function Home() {
             title: "Focused Study Sessions",
             description:
                 "Choose your favorite learning technique, set timers, and boost your productivity with structured study sessions.",
-            skeleton: <SkeletonOne />,
+            skeleton: SkeletonOne(),
             className:
                 "col-span-1 lg:col-span-3 border-b lg:border-r border-neutral-800",
         },
@@ -18,14 +18,14 @@ export default function Home() {
             title: "Track Your Learning Progress",
             description:
                 "Track your study time with visual progress bars and view detailed insights from your recent study sessions.",
-            skeleton: <SkeletonTwo />,
+            skeleton: SkeletonTwo(),
             className: "border-b col-span-1 lg:col-span-3 border-neutral-800",
         },
         {
             title: "Today's Progress at a Glance",
             description:
                 "Set daily study goals and easily track your morning and afternoon study hours separately, helping you balance your study routine.",
-            skeleton: <SkeletonThree />,
+            skeleton: SkeletonThree(),
             className:
                 "col-span-1 lg:col-span-3 lg:border-r  border-neutral-800",
         },
@@ -33,7 +33,7 @@ export default function Home() {
             title: "Grow Your Study Plant",
             description:
                 "Stay motivated as your virtual plant grows in real-time, reflecting your active study sessions and encouraging continuous learning.",
-            skeleton: <SkeletonFour />,
+            skeleton: SkeletonFour(),
             className: "col-span-1 lg:col-span-3 border-b lg:border-none",
         },
     ];
@@ -156,7 +156,7 @@ const FeatureDescription = ({children}: { children?: React.ReactNode }) => {
     );
 };
 
-export const SkeletonOne = () => {
+ const SkeletonOne = () => {
     return (
         <div className="relative flex py-8 px-2 pt-16 gap-10 h-full">
             <div className="w-full  mx-auto bg-black shadow-2xl group h-full">
@@ -180,7 +180,7 @@ export const SkeletonOne = () => {
     );
 };
 
-export const SkeletonThree = () => {
+ const SkeletonThree = () => {
     return (
         <div className="w-full mx-auto bg-transparent pt-16 group">
             <div className="flex items-center justify-center relative">
@@ -201,7 +201,7 @@ export const SkeletonThree = () => {
     );
 };
 
-export const SkeletonTwo = () => {
+ const SkeletonTwo = () => {
     return (
         <div className="relative flex flex-col pt-16 items-center justify-center h-full">
             {/* TODO */}
@@ -221,7 +221,7 @@ export const SkeletonTwo = () => {
     );
 };
 
-export const SkeletonFour = () => {
+ const SkeletonFour = () => {
     return (
         <div className="flex flex-col items-center pt-16 relative bg-transparent">
             <Image

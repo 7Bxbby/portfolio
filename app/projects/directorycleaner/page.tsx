@@ -13,7 +13,7 @@ export default function Home() {
             title: "Effortless File Organization",
             description:
                 "No more manual sorting! DirectoryCleaner automatically scans chosen folder, detects file types, and neatly arranges everything into structured subfolders.",
-            skeleton: <SkeletonOne />,
+            skeleton: SkeletonOne(),
             className:
                 "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
         },
@@ -21,14 +21,14 @@ export default function Home() {
             title: "Extension-Based Sorting",
             description:
                 "You define the extensions, and the app does the rest — whether it’s sorting images, documents, music, or videos, everything goes exactly where it belongs.",
-            skeleton: <SkeletonTwo />,
+            skeleton: SkeletonTwo(),
             className: "border-b col-span-full flex flex-col lg:block justify-center items-center lg:col-span-2 border-neutral-800",
         },
         {
             title: "Full Folder Customization",
             description:
                 "Customize your sorting system by adding, editing, or removing folders and assigning specific file extensions to each one. Whether it's .jpg for \"Images\" or .exe for \"Programs\", tailor it to fit your needs.",
-            skeleton: <SkeletonThree />,
+            skeleton: SkeletonThree(),
             className:
                 "col-span-full lg:col-span-full  flex flex-col lg:flex-row items-center gap-10 border-neutral-800",
         },
@@ -164,7 +164,7 @@ const FeatureDescription = ({children}: { children?: React.ReactNode }) => {
     );
 };
 
-export const SkeletonOne = () => {
+const SkeletonOne = () => {
     return (
         <div className="relative flex py-8 px-2 gap-10 h-full w-full justify-items-end text-end">
             <div className="w-full  p-5  mx-auto bg-black shadow-2xl group h-full">
@@ -188,7 +188,7 @@ export const SkeletonOne = () => {
     );
 };
 
-export const SkeletonThree = () => {
+const SkeletonThree = () => {
     const folders = Array(5).fill("/document_folder_icon.png"); // Mniejsza liczba, ale powielona
 
     return (
@@ -203,6 +203,8 @@ export const SkeletonThree = () => {
                     <Image
                         key={index}
                         src={folder}
+                        width={80}
+                        height={40}
                         alt="Folder"
                         className="object-contain grow"
                     />
@@ -213,7 +215,7 @@ export const SkeletonThree = () => {
 
 };
 
-export const SkeletonTwo = () => {
+const SkeletonTwo = () => {
     const images = ["/pdf_logo.png", "/mp4_logo.png", "/wav_logo.png"];
     const folder_images = ["/document_folder_icon.png", "/video_folder_icon.png", "/music_folder_icon.png"];
     const folder_names = ["Docs", "Videos", "Music"];

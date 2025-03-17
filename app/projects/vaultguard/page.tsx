@@ -13,7 +13,7 @@ export default function Home() {
             title: "Generate Strong and Secure Passwords",
             description:
                 "Adjust length, add symbols, numbers, then generate and save it instantly with a username and website.",
-            skeleton: <SkeletonOne />,
+            skeleton: SkeletonOne(),
             className:
                 "col-span-1 lg:col-span-4 border-b lg:border-r border-neutral-800",
         },
@@ -21,14 +21,14 @@ export default function Home() {
             title: "All Passwords, One Vault",
             description:
                 "Save and manage passwords for all your favorite apps in one secure place.",
-            skeleton: <SkeletonTwo />,
+            skeleton: SkeletonTwo(),
             className: "border-b col-span-1 lg:col-span-2 border-neutral-800",
         },
         {
             title: "Manage and Access Your Passwords",
             description:
                 "Easily copy, edit, or delete passwords and usernames with one click.",
-            skeleton: <SkeletonThree />,
+            skeleton: SkeletonThree(),
             className:
                 "col-span-1 lg:col-span-3 lg:border-r  border-neutral-800",
         },
@@ -36,7 +36,7 @@ export default function Home() {
             title: "Access Anywhere, Anytime",
             description:
                 "With VaultGuard, you can securely log in from any device, at any time, using just your email. No matter where you are, your account is always accessible, providing you with the flexibility and convenience to manage your passwords on the go.",
-            skeleton: <SkeletonFour />,
+            skeleton: SkeletonFour(),
             className: "col-span-1 lg:col-span-3 border-b lg:border-none",
         },
     ];
@@ -154,7 +154,7 @@ const FeatureDescription = ({children}: { children?: React.ReactNode }) => {
     );
 };
 
-export const SkeletonOne = () => {
+ const SkeletonOne = () => {
     return (
         <div className="relative flex py-8 px-2 gap-10 h-full">
             <div className="w-full  p-5  mx-auto bg-black shadow-2xl group h-full">
@@ -178,7 +178,7 @@ export const SkeletonOne = () => {
     );
 };
 
-export const SkeletonThree = () => {
+ const SkeletonThree = () => {
     return (
         <div className="w-full mx-auto bg-transparent group h-full">
             <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
@@ -195,7 +195,7 @@ export const SkeletonThree = () => {
     );
 };
 
-export const SkeletonTwo = () => {
+ const SkeletonTwo = () => {
     const images = [
         "/instagram_logo","/facebook_logo","/whatsapp_logo","/x_logo","/snapchat_logo","/youtube_logo","/whatsapp_logo"
     ];
@@ -290,15 +290,15 @@ export const SkeletonTwo = () => {
     );
 };
 
-export const SkeletonFour = () => {
+ const SkeletonFour = () => {
     return (
         <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent mt-10">
-            <Globe className="absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72"/>
+            {Globe({className:"absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72"})}
         </div>
     );
 };
 
-export const Globe = ({className}: { className?: string }) => {
+ const Globe = ({className}: { className?: string }) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
