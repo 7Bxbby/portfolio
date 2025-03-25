@@ -68,8 +68,8 @@ export default function Navbar() {
                 </div>
             ) : (
                 <>
-                    <aside className="fixed top-0 right-0 h-20 2xl:h-screen w-full 2xl:w-64 border-l border-amber-50/15 flex 2xl:flex-col flex-row items-center justify-between 2xl:py-8 py-0 2xl:px-0 px-8 z-50" />
-                    <div className="flex items-center justify-center 2xl:h-screen h-full w-screen 2xl:w-full -z-50">
+                    <aside className="fixed top-0 right-0 h-16 2xl:h-screen w-full 2xl:w-64 border-l border-amber-50/15 flex 2xl:flex-col flex-row items-center justify-between 2xl:py-8 py-0 2xl:px-0 px-8 z-50" />
+                    <div className="flex items-center justify-center 2xl:h-screen h-full w-screen 2xl:w-full z-50">
                         <GooeyNav
                             items={navItems}
                             animationTime={600}

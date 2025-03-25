@@ -31,8 +31,8 @@ const items = [
 export default function Projects() {
     return (
         <section className="h-screen w-full flex items-center relative z-10 bg-transparent text-white snap-start" id={"projects"}>
-            <div className="absolute top-0 left-0 h-full w-12 border[1px] border-amber-50/30  bg-gray-500/10 cursor-ew-resize z-50 rounded-r-4xl" />
-            <div className="absolute top-0 right-0 h-full w-12 bg-gray-500/10 border[1px] border-amber-50/30 cursor-ew-resize z-50 rounded-l-4xl" />
+            <div className="absolute block md:hidden top-0 left-0 h-full w-12 border[1px] border-amber-50/30  bg-gray-500/10 cursor-ew-resize z-50 rounded-r-4xl" />
+            <div className="absolute block md:hidden top-0 right-0 h-full w-12 bg-gray-500/10 border[1px] border-amber-50/30 cursor-ew-resize z-50 rounded-l-4xl" />
             <div className="inset-0 overflow-hidden">
                 <motion.div className="absolute top-1/4 left-0 w-full h-px bg-amber-50/30 transform -rotate-6 duration-1000 z-1"
                             initial={{background: "#fffbeb26"}}
