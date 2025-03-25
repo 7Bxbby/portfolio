@@ -57,13 +57,12 @@ export default function Navbar() {
     return (
         <aside className={`fixed top-0 left-0 h-50 ${!isSubpage? "bg-black ": "2xl:bg-black bg-transparent"} transform 2xl:-translate-y-[0%] -translate-y-[30%] 2xl:h-screen  w-full 2xl:w-64 border-r border-amber-50/15 flex flex-row 2xl:flex-col items-center justify-center 2xl:justify-between py-8 z-50`}>
             {isSubpage ? (
-                <div className="flex 2xl:flex-col flex-row items-center justify-center 2xl:h-full p-2 2xl:p-0">
+                <div className="flex 2xl:flex-col 2xl:h-full 2xl:w-fit w-full p-2 2xl:p-0">
                     <Link
                         href="/#projects"
-                        className="text-black bg-white rounded-[8px] py-[0.6em] px-[1em] relative cursor-pointer transition-all duration-300 ease shadow flex items-center justify-around"
+                        className="text-black bg-white rounded-[8px] py-[0.6em] px-[1em] relative cursor-pointer transition-all duration-300 ease shadow"
                     >
                         <ArrowLeft size={20} />
-                        Projects
                     </Link>
 
                 </div>

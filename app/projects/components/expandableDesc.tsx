@@ -91,7 +91,7 @@ export function ExpandableDesc({title, children, image}:Props): JSX.Element {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-                    className="text-6xl font-bold select-none [text-shadow:_0px_0px_20px_#ffffff]">{title}</motion.h2>
+                    className="text-4xl sm:text-5xl md:text-6xl font-bold select-none [text-shadow:_0px_0px_20px_#ffffff]">{title}</motion.h2>
             <button
                 className=" text-white rounded-lg font-bold cursor-pointer" onClick={() => setActive(true)}
             >
