@@ -11,7 +11,7 @@ export default function Contact() {
     return (
         <section
             className="h-screen flex items-center relative bg-black text-white border-t-[1px] border-amber-50/15"
-            id="connect"
+            id="contact"
         >
             <div className="overflow-hidden absolute top-0 left-0 w-full h-screen">
 
@@ -60,7 +60,7 @@ export default function Contact() {
                         transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                         className="text-5xl md:text-6xl font-bold mb-6 [text-shadow:_0px_0px_20px_#ffffff] select-none"
                     >
-                        Connect
+                        Contact
                     </motion.h2>
                     <p className="text-lg text-gray-400 mb-10 max-w-xl">
                         Let’s connect — feel free to check out my work or say hi.

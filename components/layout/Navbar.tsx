@@ -14,7 +14,7 @@ export default function Navbar() {
         { label: 'About', href: '#about' },
         { label: 'Skills', href: '#skills' },
         { label: 'Projects', href: '#projects' },
-        { label: 'Connect', href: '#connect' },
+        { label: 'Contact', href: '#contact' },
     ];
 
     const sectionIds = navItems.map((item) => item.href.replace('#', ''));
