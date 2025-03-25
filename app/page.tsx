@@ -4,8 +4,12 @@ import Hero from '../components/sections/Hero';
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import Ribbons from '../components/common/Ribbons';
-import React from "react";
+import React, {useEffect} from "react";
 export default function Home() {
+    useEffect(() => {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflowX = '';
+    }, []);
     return (
         <>
             <Hero />
