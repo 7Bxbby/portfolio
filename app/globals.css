@@ -7,6 +7,9 @@ body {
   background-color: black;  /* Pure black */
   color: #fff;
 }
+html{
+  overflow-x: hidden;
+}
 svg {
   caret-color: transparent;
   user-select: none;

@@ -292,8 +292,8 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             </style>
 
             <div className="relative" ref={containerRef}>
-                <nav className="flex relative" style={{ transform: "translate3d(0,0,0.01px)" }}>
-                    <ul ref={navRef} className="flex flex-col text-center gap-8 p-0 px-4 m-0 relative z-[3]">
+                <nav className="flex relative " style={{ transform: "translate3d(0,0,0.01px)" }}>
+                    <ul ref={navRef} className="flex 2xl:flex-col flex-row text-center gap-8 p-0 2xl:px-4 m-0 relative z-[3]">
                         {items.map((item, index) => (
                             <li
                                 key={index}

@@ -115,9 +115,9 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     };
 
     return (
-        <div className="relative flex-1 overflow-hidden">
+        <div className="relative hidden lg:block flex-1 overflow-x-hidden">
             <div
-                className="absolute left-1/2 bottom-0 mb-6 rounded-full border-32 border-amber-50/15 h-[50%] w-[50%] z-10 transform -translate-x-1/2 -rotate-x-80"
+                className="absolute left-1/2 bottom-0 mb-6 rounded-full border-16 border-amber-50/15 h-64 w-64 z-10 transform -translate-x-1/2 -rotate-x-80"
             />
             <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
                 <motion.div

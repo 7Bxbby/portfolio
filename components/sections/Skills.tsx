@@ -7,8 +7,8 @@ import React from "react";
 
 export default function Skills() {
     return (
-        <section id="skills" className="flex h-screen flex-col items-center justify-center text-white relative snap-start">
-            <motion.div className="absolute top-1/4 left-0 w-full h-px bg-amber-50/30 transform rotate-6 duration-1000 z-1"
+        <section id="skills" className="flex pt-26 h-screen w-full flex-col items-center justify-center text-white relative snap-start">
+            <motion.div className="absolute top-1/4 left-0 w-screen h-px bg-amber-50/30 transform rotate-6 duration-1000 z-1"
                         initial={{background: "#fffbeb26"}}
                         whileInView={{background: "#fffbeb4d"}}
 
@@ -21,15 +21,20 @@ export default function Skills() {
                         initial={{background: "#fffbeb26"}}
                         whileInView={{background: "#fffbeb4d"}}
             ></motion.div>
-            <Container className={""}>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold select-none mb-12 break-words max-w-[90vw] leading-tight">
+  <span className="[text-shadow:_0px_0px_20px_#ffffff] transition-all duration-300 hover:[text-shadow:_0px_0px_8px_#ffffff]">
+    Skills
+  </span>{" "}
+                & Tech Stack
+            </h2>
+            <Container className={"lg:flex-row flex-col"}>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="flex-1"
+                    className="lg:flex-1 flex-1/4 max-w-4xl items-center flex justify-center"
                 >
-                    <h2 className="text-6xl font-bold select-none mb-12"><span className={"[text-shadow:_0px_0px_20px_#ffffff] transition-all duration-300 select-none hover:[text-shadow:_0px_0px_8px_#ffffff]"}>Skills</span> & Tech Stack</h2>
                     <SpotlightCard className={"z-3"}>
                         <h3 className="text-2xl font-bold mb-4 text-white">My Skillset</h3>
                         <ul className="space-y-4">

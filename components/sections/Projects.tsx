@@ -31,6 +31,8 @@ const items = [
 export default function Projects() {
     return (
         <section className="h-screen w-full flex items-center relative z-10 bg-transparent text-white snap-start" id={"projects"}>
+            <div className="absolute top-0 left-0 h-full w-12 border[1px] border-amber-50/30  bg-gray-500/10 cursor-ew-resize z-50 rounded-r-4xl" />
+            <div className="absolute top-0 right-0 h-full w-12 bg-gray-500/10 border[1px] border-amber-50/30 cursor-ew-resize z-50 rounded-l-4xl" />
             <div className="inset-0 overflow-hidden">
                 <motion.div className="absolute top-1/4 left-0 w-full h-px bg-amber-50/30 transform -rotate-6 duration-1000 z-1"
                             initial={{background: "#fffbeb26"}}
@@ -51,7 +53,7 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-                className="text-6xl font-bold absolute top-32 left-1/2 transform -translate-x-1/2 select-none [text-shadow:_0px_0px_20px_#ffffff]">Projects</motion.h2>
+                className="pt-26 text-4xl sm:text-5xl md:text-6xl font-bold absolute top-32 left-1/2 transform -translate-x-1/2 select-none [text-shadow:_0px_0px_20px_#ffffff]">Projects</motion.h2>
             <Container className={"h-full w-full bg-transparent"}>
                 <div className={"h-full relative bg-transparent"}>
                     <InfiniteMenu items={items}/>
